@@ -1,6 +1,6 @@
 class range_via_iterator:
     def __init__(self, start, end, step):
-        self.start = start
+        self.start = start - step
         self.end = end
         self.step = step
     def __iter__(self):
