@@ -1,5 +1,5 @@
 def range_via_generator(start, end, step):
-    while start <= end:
+    while start <= end - 1:
         yield start
         start += step
 
