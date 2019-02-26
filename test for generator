@@ -4,9 +4,13 @@ from range_generator import range_via_generator
 
 class range_via_generator_test(unittest.TestCase):
     def test_on_normal_working(self):
-        generator = range_via_generator(1, 10, 3)
+        generator = range_via_generator(1, 10, 2)
         self.assertEqual(1, next(generator))
-        self.assertEqual(4, next(generator))
+        self.assertEqual(3, next(generator))
+        self.assertEqual(5, next(generator))
         self.assertEqual(7, next(generator))
-        self.assertEqual(10, next(generator))
-        self.assertRaises(StopIteration, lambda: next(generation))
+        self.assertEqual(9, next(generator))
+        self.assertRaises(StopIteration, lambda: next(generator))
+
+if __name__ == '__main__':
+    unittest.main()
