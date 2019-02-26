@@ -1,7 +1,7 @@
 class range_via_iterator:
     def __init__(self, start, end, step):
         self.start = start - step
-        self.end = end
+        self.end = end - 1
         self.step = step
     def __iter__(self):
         return self
