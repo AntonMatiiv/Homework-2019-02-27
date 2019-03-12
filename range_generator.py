@@ -1,7 +1,8 @@
 def range_via_generator(start, end, step):
-    while start <= end - 1:
-        yield start
-        start += step
+    current = start 
+    while current <= end - 1:
+        yield current
+        current += step
 
 #for i in range_via_generator(1, 15, 3):
     #print(i)
